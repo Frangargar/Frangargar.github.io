@@ -23,10 +23,21 @@ body, html {
 
 .bingo-cell {
     padding: 20px;
-    background-color: #eee;
+    background-color: #c21c1c; /* Fondo de las casillas */
+    border: 1px solid #ccc; /* Borde para las casillas vacías */
     border-radius: 5px;
     cursor: pointer;
+    display: flex; /* Asegura que el contenido se centre */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 50px; /* Altura mínima para las casillas vacías */
 }
+
+.free { /* Estilo específico para la casilla "Libre" */
+    font-weight: bold; /* Hace el texto "Libre" más notorio */
+    color: #444; /* Color del texto para "Libre" */
+}
+
 
 .bingo-cell.marked {
     position: relative;
